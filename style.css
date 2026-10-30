@@ -320,6 +320,21 @@ section { padding: 5rem var(--gutter); }
 
 .tl-desc { font-size: .98rem; color: var(--muted); line-height: 1.7; max-width: 100ch; }
 
+/* ─── DOCUMENTATION ─── */
+.doc-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1rem; }
+
+.doc-links { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.2rem; }
+
+.doc-link {
+  display: inline-flex; align-items: center;
+  padding: .5rem 1.1rem; border-radius: 8px;
+  border: 1px solid var(--border); color: var(--text);
+  text-decoration: none; font-size: .88rem; font-weight: 500;
+  transition: border-color .2s, background .2s;
+}
+
+.doc-link:hover { border-color: var(--blue); background: var(--blue-dim); }
+
 /* ─── CONTACT ─── */
 .contact-box {
   background: var(--bg2); border: 1px solid var(--border);
