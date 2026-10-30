@@ -10,6 +10,7 @@
 
 <!-- NAV -->
 <nav>
+  <div class="container nav-inner">
   <div class="nav-logo">~/portfolio</div>
   <ul class="nav-links">
     <li><a href="#apropos">À propos</a></li>
@@ -17,16 +18,17 @@
     <li><a href="#experiences">Expériences</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="accueil">
-  <div class="hero-inner">
+  <div class="container hero-inner">
     <div>
 <div class="hero-tag"><span></span> BTS SIO · Option SISR</div>
-      <div style="display:flex; align-items:center; gap:1.2rem; margin-bottom:0;">
-        <h1 class="hero-name" style="margin-bottom:0;">Anatole<br/><em>Percher.</em></h1>
-        <img src="Photo_portfolio_Anatole_Percher.webp" alt="Anatole Percher" style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:2px solid var(--blue); box-shadow:0 0 0 4px var(--blue-dim); flex-shrink:0;"/>
+      <div class="hero-id">
+        <h1 class="hero-name">Anatole<br/><em>Percher.</em></h1>
+        <img src="Photo_portfolio_Anatole_Percher.webp" alt="Anatole Percher" class="hero-photo"/>
       </div>
       <p class="hero-sub">Technicien informatique — support, réseaux &amp; virtualisation. Étudiant en 2ème année de BTS SIO et fondateur d'Informateck, ma micro-entreprise de réparation et de montage de PC.</p>
       <div class="hero-btns">
@@ -49,7 +51,7 @@
 
 <!-- À PROPOS -->
 <section id="apropos">
-  <div class="section-inner">
+  <div class="container">
     <p class="eyebrow">// À propos</p>
     <h2 class="section-title">Qui suis-je&nbsp;?</h2>
     <div class="divider"></div>
@@ -82,8 +84,8 @@
 </section>
 
 <!-- COMPÉTENCES -->
-<section id="competences">
-  <div class="section-inner">
+<section id="competences" class="section-alt">
+  <div class="container">
     <p class="eyebrow">// Compétences</p>
     <h2 class="section-title">Stack &amp; infrastructure</h2>
     <div class="divider"></div>
@@ -91,7 +93,7 @@
 
       <div class="skill-group">
         <p class="skill-group-title">Infrastructure &amp; Réseaux</p>
-        <div class="project-tags" style="padding:0;">
+        <div class="skill-tags">
           <span class="tag">Active Directory</span>
           <span class="tag">NAS Synology</span>
           <span class="tag">Routeurs</span>
@@ -102,7 +104,7 @@
 
       <div class="skill-group">
         <p class="skill-group-title">Support &amp; Matériel</p>
-        <div class="project-tags" style="padding:0;">
+        <div class="skill-tags">
           <span class="tag">Helpdesk N1</span>
           <span class="tag">Dépannage à distance</span>
           <span class="tag">Ticketing</span>
@@ -113,7 +115,7 @@
 
       <div class="skill-group">
         <p class="skill-group-title">Outils &amp; Relation client</p>
-        <div class="project-tags" style="padding:0;">
+        <div class="skill-tags">
           <span class="tag">Office 365</span>
           <span class="tag">Canva</span>
           <span class="tag">Photoshop</span>
@@ -125,7 +127,7 @@
 
       <div class="skill-group">
         <p class="skill-group-title">Savoir-être &amp; Langues</p>
-        <div class="project-tags" style="padding:0;">
+        <div class="skill-tags">
           <span class="tag">Courtois</span>
           <span class="tag">À l'écoute</span>
           <span class="tag">Ponctuel</span>
@@ -141,8 +143,8 @@
 </section>
 
 <!-- EXPÉRIENCES -->
-<section id="experiences">
-  <div class="section-inner">
+<section id="experiences" class="section-alt">
+  <div class="container">
     <p class="eyebrow">// Expériences</p>
     <h2 class="section-title">Parcours &amp; formations</h2>
     <div class="divider"></div>
@@ -208,7 +210,7 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-inner">
+  <div class="container">
     <p class="eyebrow">// Contact</p>
     <h2 class="section-title">Travaillons ensemble</h2>
     <div class="divider"></div>
@@ -300,20 +302,6 @@
   }
 
   setTimeout(nextLine, 600);
-
-  // ── Skill bars on scroll ──
-  const fills = document.querySelectorAll('.skill-fill');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        const el = e.target;
-        el.style.transform = `scaleX(${el.dataset.w})`;
-        obs.unobserve(el);
-      }
-    });
-  }, { threshold: .3 });
-
-  fills.forEach(f => obs.observe(f));
 </script>
 </body>
 </html>
