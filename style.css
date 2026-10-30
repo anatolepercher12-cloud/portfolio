@@ -284,6 +284,24 @@ section { padding: 5rem var(--gutter); }
 }
 
 /* ─── EXPÉRIENCES / TIMELINE ─── */
+.parcours-grid {
+  display: grid; gap: 3rem 4rem;
+  grid-template-columns: 1.4fr 1fr;
+  align-items: start;
+}
+
+.parcours-title {
+  display: flex; align-items: center; gap: .7rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem; font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.parcours-title::before {
+  content: ''; width: 18px; height: 3px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--accent2));
+}
+
 .timeline { position: relative; }
 
 .timeline::before {
@@ -414,6 +432,8 @@ footer {
 
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .about-stats { grid-template-columns: repeat(4, 1fr); }
+
+  .parcours-grid { grid-template-columns: 1fr; }
 }
 
 /* Mobile */
