@@ -354,12 +354,6 @@ section { padding: 5rem var(--gutter); }
 
 .doc-card:hover { border-color: var(--blue); transform: translateY(-3px); }
 
-.doc-img {
-  width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top left;
-  border-bottom: 1px solid var(--border);
-  background: #000;
-}
-
 .doc-body { display: flex; flex-direction: column; gap: .6rem; padding: 1.3rem 1.4rem 1.4rem; flex: 1; }
 
 .doc-meta { font-family: 'JetBrains Mono', monospace; font-size: .75rem; color: var(--blue); }
