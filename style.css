@@ -20,7 +20,7 @@
       background: var(--bg);
       color: var(--text);
       font-family: 'Inter', sans-serif;
-      font-size: 16px;
+      font-size: 17px;
       line-height: 1.6;
       overflow-x: hidden;
     }
@@ -110,7 +110,7 @@
     }
 
     .hero-sub {
-      margin-top: 1rem; font-size: 1rem;
+      margin-top: 1rem; font-size: 1.1rem;
       color: var(--muted); max-width: 58ch; line-height: 1.7;
     }
 
@@ -208,7 +208,7 @@
       align-items: start;
     }
 
-    .about-text { color: var(--muted); line-height: 1.8; }
+    .about-text { color: var(--muted); line-height: 1.8; font-size: 1.08rem; }
     .about-text p + p { margin-top: 1rem; }
 
     .about-stats {
@@ -226,7 +226,7 @@
       font-size: 2rem; font-weight: 700; color: var(--blue);
     }
 
-    .stat-lbl { font-size: .78rem; color: var(--muted); margin-top: .2rem; }
+    .stat-lbl { font-size: .85rem; color: var(--muted); margin-top: .2rem; }
 
     /* ─── COMPÉTENCES ─── */
     #competences { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -303,7 +303,7 @@
 
     .tag {
       padding: .2rem .7rem; border-radius: 999px;
-      font-size: .73rem; font-weight: 500;
+      font-size: .8rem; font-weight: 500;
       background: var(--bg3); color: var(--blue); border: 1px solid var(--blue-dim);
       font-family: 'JetBrains Mono', monospace;
     }
@@ -351,9 +351,9 @@
       font-size: 1.05rem; font-weight: 600; margin-bottom: .2rem;
     }
 
-    .tl-company { font-size: .85rem; color: var(--muted); margin-bottom: .5rem; }
+    .tl-company { font-size: .92rem; color: var(--muted); margin-bottom: .5rem; }
 
-    .tl-desc { font-size: .88rem; color: var(--muted); line-height: 1.7; }
+    .tl-desc { font-size: .98rem; color: var(--muted); line-height: 1.7; }
 
     /* ─── CONTACT ─── */
     .contact-box {
@@ -371,7 +371,7 @@
       pointer-events: none;
     }
 
-    .contact-box p { color: var(--muted); margin-bottom: 2rem; max-width: 62ch; margin-left: auto; margin-right: auto; }
+    .contact-box p { color: var(--muted); margin-bottom: 2rem; font-size: 1.08rem; max-width: 62ch; margin-left: auto; margin-right: auto; }
 
     .contact-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 
